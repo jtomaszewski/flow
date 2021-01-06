@@ -222,7 +222,7 @@ jobs:
             sudo docker run -it --rm --privileged multiarch/qemu-user-static --reset --credential yes --persistent yes
       - run:
           name: Build flow
-          no_output_timeout: 30m
+          no_output_timeout: 60m
           command: |
             cp .circleci/Dockerfile_aarch64 .
             cp .circleci/build_flow_aarch64.sh .
